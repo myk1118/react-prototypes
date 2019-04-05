@@ -7,7 +7,6 @@ import avocado6 from './images/avocado6.png';
 import avocado7 from './images/avocado7.png';
 import avocado8 from './images/avocado8.png';
 
-
 export default [
     {
         src: avocado1,

@@ -1,6 +1,6 @@
 import React from 'react';
-import './app.css';
 import Scrapbook from './scrapbook';
+import './app.css';
 
 export default () => (
     <div className="main-container">
