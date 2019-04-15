@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 class FormatTime extends Component {
     constructor(props) {
@@ -12,7 +12,7 @@ class FormatTime extends Component {
         }
     }
     millisecondsToTime() {
-        const {elapsed} = this.props;
+        const { elapsed } = this.props;
         const sec = elapsed / 1000;
         const min = sec / 60;
         return {
@@ -34,10 +34,10 @@ class FormatTime extends Component {
         return number < 10 ? `0${number}` : number;
     }
     render() {
-        const {timerStyle, leadingZero, trailingZero} = this;
-        const {hour, min, sec, ms} = this.millisecondsToTime();
+        const { timerStyle, leadingZero, trailingZero } = this;
+        const { hour, min, sec, ms } = this.millisecondsToTime();
         return (
-            <div style = {this.timerStyle}>{this.leadingZero(hour)}:{this.leadingZero(min)}:{this.leadingZero(sec)}.{this.trailingZero(ms)}</div>
+            <div style={this.timerStyle}>{this.leadingZero(hour)}:{this.leadingZero(min)}:{this.leadingZero(sec)}.{this.trailingZero(ms)}</div>
         )
     }
 }
