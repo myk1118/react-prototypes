@@ -12,8 +12,8 @@ export default (props) => {
     });
 
     return (
-        <table className = 'table'>
-            <thead className = 'thead-inverse'>
+        <table className='table'>
+            <thead className='thead-inverse'>
                 <tr>
                     <th>Name</th>
                     <th>Course</th>
