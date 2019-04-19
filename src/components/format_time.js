@@ -37,7 +37,7 @@ class FormatTime extends Component {
         const { timerStyle, leadingZero, trailingZero } = this;
         const { hour, min, sec, ms } = this.millisecondsToTime();
         return (
-            <div style={this.timerStyle}>{this.leadingZero(hour)}:{this.leadingZero(min)}:{this.leadingZero(sec)}.{this.trailingZero(ms)}</div>
+            <div style={timerStyle}>{leadingZero(hour)}:{leadingZero(min)}:{leadingZero(sec)}.{trailingZero(ms)}</div>
         )
     }
 }
